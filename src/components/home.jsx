@@ -31,9 +31,9 @@ export default function Home() {
       <h1 className="text-white justify-self-center mt-16 font-poppins font-semibold leading-13 space-x-2 tracking-wide text-4xl md:text-4xl lg:text-6xl scale-y-90 ">The free, fun, and effective <br></br><span className=" p-4">way to learn a language</span></h1>
       <p className="text-zinc-400 justify-self-center font-figtree  mt-6 font-semibold scale-y-95">Learn at your own pace with lifetime access on mobile and desktop.</p>
       </div>
-      <div className="justify-self-center mt-8">
+      <div className="justify-self-center justify-items-center mt-8">
         <Link to="/signup">
-     <button className=" bg-yellow-400 p-2 rounded-2xl px-4 text-sm font-inter  font-semi-bold hover:bg-yellow-600 active:bg-yellow-100">Start a new course!</button>
+     <button className=" bg-yellow-400 p-2 rounded-2xl px-4 text-sm font-inter mr-[2%] ml-[20%] font-semi-bold hover:bg-yellow-600 active:bg-yellow-100">Start a new course!</button>
      </Link>
      <img src={teampic} className="mt-3 ml-8"/>
     </div>

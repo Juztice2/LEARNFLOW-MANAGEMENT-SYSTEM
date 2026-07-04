@@ -34,7 +34,7 @@ setMsg('err.message');
    </div>
    <div className="m-2 md:flex">
     <div className=" mb-8 lg:w-[70%]">
-    <form onSubmit={handleSubmit} className="bg-white/95 rounded-lg p-3  shadow-md shadow-black justify-self-center w-[70%]">
+    <form onSubmit={handleSubmit} className="bg-white/95 rounded-lg p-3  shadow-md shadow-black justify-self-center ">
    <h2 className=" font-poppins text-purple-700 justify-self-center">< BookOpen size={50}/></h2>
    <h3 className="text-4xl font-dm  mt-5  ">Sign in to</h3>
      <p className="text-lg font-poppins">LearnFlow University</p>
