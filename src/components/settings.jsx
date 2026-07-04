@@ -68,7 +68,7 @@ export default function Setting() {
           <div className="space-y-8">
 
             <div >
-              <div className="flex justify-between mb-4">
+              <div className="flex justify-around mb-4">
                 <h3 className="font-medium text-sm">Profile Name</h3>
                 <Pencil size={15} />
               </div>
@@ -101,7 +101,7 @@ export default function Setting() {
             </div>
 
             <div>
-              <div className="flex justify-between mb-4">
+              <div className="flex justify-around mb-4">
                 <h3 className="font-medium text-sm">
                   Residential Address
                 </h3>
