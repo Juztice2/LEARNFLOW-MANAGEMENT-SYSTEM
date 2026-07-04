@@ -28,7 +28,7 @@ export default function Setting() {
           </div>
            
             {/* Name */}
-        <div className="pt-1 text-center">
+        <div className="pt-1 text-center justify-self-center">
           <h2 className="font-semibold">Nneka Eze</h2>
           <p className="text-gray-500 text-sm">Student</p>
         </div>
@@ -67,13 +67,13 @@ export default function Setting() {
 
           <div className="space-y-8">
 
-            <div>
+            <div >
               <div className="flex justify-between mb-4">
                 <h3 className="font-medium text-sm">Profile Name</h3>
                 <Pencil size={15} />
               </div>
 
-              <div className="grid grid-cols-2 gap-5">
+              <div className="grid md:grid-cols-2 gap-5">
                 <div>
                   <label className="text-xs text-gray-500">
                     First Name
@@ -109,7 +109,7 @@ export default function Setting() {
                 <Pencil size={15} />
               </div>
 
-              <div className="grid grid-cols-2 gap-5">
+              <div className="grid md:grid-cols-2 gap-5">
                 <div>
                   <label className="text-xs text-gray-500">
                     Residential Address
