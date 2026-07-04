@@ -128,7 +128,7 @@ export default function Setting() {
 
                   <input
                     defaultValue="No 23 Uzoma enye street, wuse 2"
-                    className="mt-1 w-full border rounded-md px-3 py-2"
+                    className="mt-1  border rounded-md px-3 py-2"
                   />
                 </div>
               </div>
@@ -149,7 +149,7 @@ export default function Setting() {
                 Choose from dropdown
               </label>
 
-              <select className="mt-1 w-full border rounded-md px-3 py-2">
+              <select className="mt-1  border rounded-md px-3 py-2">
                 <option>Student</option>
                 <option>Employed</option>
                 <option>Self Employed</option>
