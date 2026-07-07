@@ -33,7 +33,7 @@ setMsg('err.message');
  }
   return(
   <div className="overflow-hidden bg-[#F5F5F5] font-poppins lg:flex">
-  <form className="bg-white w-[90%] justify-self-center mt-10 px-10 py-4 rounded-md justify-items-start mb-5 lg:w-[60]">
+  <form onSubmit={handleSubmit} className="bg-white w-[90%] justify-self-center mt-10 px-10 py-4 rounded-md justify-items-start mb-5 lg:w-[60]">
      <div className="flex items-center gap-1">
     <BookOpen size={30} />
    <Link to="/" className="font-poppins text-purple-800  hover:text-slate-400 cursor-pointer active:text-slate-50">LearnFlow</Link>
