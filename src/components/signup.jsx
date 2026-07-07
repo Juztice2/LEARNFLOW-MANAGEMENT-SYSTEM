@@ -65,7 +65,7 @@ import { useAuth } from "../Context/authcontext.jsx";
     <div className="mt-3 gap-2 font-poppins border border-neutral-800 flex items-center rounded-md p-3 justify-between mb-8">
    <input placeholder="Enter your email" id="email" type="email" value={email} onChange={(e)=> setEmail(e.target.value)}
     required 
-    className="outline-none focus:outline-none focus:ring-0"></input>
+    className="outline-none focus:outline-none focus:ring-0 w-[70%]"></input>
     <MailIcon  size={18}/>
    </div>
    
@@ -73,7 +73,7 @@ import { useAuth } from "../Context/authcontext.jsx";
     <div className="mt-3 gap-2 font-poppins  border border-neutral-800 flex items-center rounded-md p-3 justify-between mb-8">
    <input placeholder="Enter Password" id="password" type="password" value={password} onChange={(e)=> setPassword(e.target.value)}
     required 
-    className="outline-none focus:outline-none focus:ring-0"></input>
+    className="outline-none focus:outline-none focus:ring-0 w-[70%]"></input>
     <EyeOff  size={18}/>
    </div>
 
@@ -81,7 +81,7 @@ import { useAuth } from "../Context/authcontext.jsx";
     <div className="mt-3 gap-2 font-poppins  border border-neutral-800 flex items-center rounded-md p-3 justify-between mb-8">
    <input placeholder="Confirm Paswword" id="confirm-password" type="password" value={passwordConfirm} onChange={(e)=> setPasswordConfirm(e.target.value)}
     required 
-    className="outline-none focus:outline-none focus:ring-0"></input>
+    className="outline-none focus:outline-none focus:ring-0 w-[70%]"></input>
     <EyeOff  size={18}/>
    </div>
    <button disabled={loading} type="submit" className="bg-purple-800 text-white p-4 w-full mt-6 rounded-lg  font-poppins hover:bg-slate-400 active:bg-white">
