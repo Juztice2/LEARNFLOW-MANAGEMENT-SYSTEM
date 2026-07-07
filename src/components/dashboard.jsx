@@ -1,9 +1,4 @@
 import {
-  LayoutDashboard,
-  BookOpen,
-  FileEdit,
-  Settings,
-  LogOut,
   Play,
 } from "lucide-react";
 import { useState } from "react";

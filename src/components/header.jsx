@@ -25,7 +25,7 @@ export default function Header() {
      <NavLink to="/pricing" className=" hover:text-slate-400 cursor-pointer active:text-slate-50">Features</NavLink>
     <NavLink to="/pricing" className=" hover:text-slate-400 cursor-pointer active:text-slate-50">Pricing</NavLink>
      <NavLink to="/signup" className="hover:text-slate-400 cursor-pointer active:text-slate-50">Signup</NavLink>
-     <NavLink to="/dashboard" className="hover:text-slate-400 cursor-pointer active:text-slate-50">Dashboard</NavLink>
+     <NavLink to="/contact" className="hover:text-slate-400 cursor-pointer active:text-slate-50">Contact-Us</NavLink>
    </div>
    <Link to="/signup">
    <button className="border-2 text-yellow-400  font-poppins border-yellow-400 rounded-full p-1 px-3 hover:text-yellow-200 active:text-slate-50">Lets start your learning journey</button>
@@ -49,10 +49,10 @@ export default function Header() {
           <p className="text-xs text-gray-500 mb-4 uppercase">Menu</p>
 
           <nav className="space-y-2">
-            <Link to="/dashboard">
+            <Link to="/contact">
             <button className="w-full h-11 bg-[#2C2C2C] text-white rounded-md flex items-center px-5 gap-4">
               <LayoutDashboard size={18} />
-              <span>Dashboard</span>
+              <span>Contact-Us</span>
             </button>
             </Link>
             <Link to="/">
@@ -67,10 +67,10 @@ export default function Header() {
               <span>Features</span>
             </button>
 
-            <Link to="/signin">
+            <Link to="/signup">
             <button className="w-full h-11 flex items-center px-5 gap-4 text-gray-700 hover:bg-gray-100 rounded-md">
               <LogIn size={18} />
-              <span>Log in</span>
+              <span>Signup</span>
             </button>
             </Link>
           </nav>

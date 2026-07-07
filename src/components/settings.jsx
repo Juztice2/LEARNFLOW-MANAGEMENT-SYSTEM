@@ -9,7 +9,7 @@ export default function Setting() {
             <Dashboard1 />
             <Profile />
             </div>
-    <div className="min-h-screen bg-[#F8F8F8] flex  font-poppins justify-self-center mt-2 lg:w-[82%] justify-self-end">
+    <div className="min-h-screen bg-[#F8F8F8] flex  font-poppins mt-2 lg:w-[82%] justify-self-end">
       <div className=" bg-white rounded-lg shadow-sm overflow-hidden">
 
         {/* Header */}

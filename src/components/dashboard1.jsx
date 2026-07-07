@@ -23,7 +23,7 @@ export default function Dashboard1() {
       {/* Sidebar */}
     <aside className="hidden lg:block w-[230px] bg-white border-r border-gray-200 top-0 h-screen fixed left-0 pt-10">
       {/* Logo */}
-      <Link to="/">
+      <Link to="/dashboard">
        <div className="px-8 py-10 flex items-center gap-3">
           <BookOpen className=" w-8 h-8" />
           <h1 className="text-[18px] font-bold">LearnFlow</h1>
@@ -86,7 +86,7 @@ export default function Dashboard1() {
               {open  && (
                <aside className=" w-[230px] bg-white border-r border-gray-200 fixed left-0 bottom-0 h-screen pt-8">
         {/* Logo */}
-        <Link to="/">
+        <Link to="/dashboard">
         <div className="px-8 py-10 flex items-center gap-3">
           <BookOpen className="w-8 h-8" />
           <h1 className="text-[18px] font-bold">LearnFlow</h1>
