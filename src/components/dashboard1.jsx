@@ -7,9 +7,21 @@ import {
   GlobeIcon
 } from "lucide-react";
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, useNavigate, NavLink } from "react-router-dom";
+import { useAuth } from "../Context/authcontext";
+import { signOut } from "firebase/auth";
 
 export default function Dashboard1() {
+  const {logout} = useAuth();
+ const navigate = useNavigate()
+const handleLogout = async () => {
+  try{
+    await logout();
+    navigate("/home")
+  }catch(error){
+  console.error('Failed to log out',error)
+  }
+}
   const [open, setOpen] = useState(false);
   let hambugger; 
    if(open) {
@@ -64,7 +76,7 @@ export default function Dashboard1() {
             </button>
             </Link>
 
-            <button className="w-full h-11 flex items-center px-5 gap-4 text-gray-700 hover:bg-gray-100 rounded-md">
+            <button className="w-full h-11 flex items-center px-5 gap-4 text-red-500 hover:bg-gray-100 rounded-md" onClick={handleLogout}>
               <LogOut size={18} />
               <span>Log out</span>
             </button>
@@ -128,7 +140,7 @@ export default function Dashboard1() {
             </button>
             </Link>
 
-            <button className="w-full h-11 flex items-center px-5 gap-4 text-gray-700 hover:bg-gray-100 rounded-md">
+            <button className="w-full h-11 flex items-center px-5 gap-4 text-red-500 hover:bg-gray-100 rounded-md" onClick={handleLogout}>
               <LogOut size={18} />
               <span>Log out</span>
             </button>

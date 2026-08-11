@@ -10,6 +10,7 @@ import Explore from "./explore";
 import Setting from "./settings";
 import ProtectedRoute from "./protectedRoute";
 import { useAuth } from "../Context/authcontext";
+import Status from "./status";
 
 function App() {
 const {loading, currentUser} = useAuth();
@@ -27,6 +28,7 @@ if(loading){
         <Route path="/home" element={currentUser ? <Navigate to="/dashboard" replace /> : <Home/>} />
         <Route path="/signup" element= {currentUser ? <Navigate to="/dashboard" replace /> : < Signup />} />
          <Route path="/signin" element={currentUser ? <Navigate  to="/dashboard" replace /> : <Signin/>} />
+          <Route path="/status" element={currentUser ? <Navigate  to="/dashboard" replace /> : <Status/>} />
            <Route path="/courses" element={<Courses/>} />
            <Route path="/profile" element={<ProfileData/>} />
            <Route path="/explore" element={<Explore/>} />

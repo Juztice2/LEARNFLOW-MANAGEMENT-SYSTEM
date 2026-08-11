@@ -24,10 +24,10 @@ export default function Header() {
    <div className="flex gap-5 text-sm text-slate-200 font-poppins ">
      <NavLink to="/pricing" className=" hover:text-slate-400 cursor-pointer active:text-slate-50">Features</NavLink>
     <NavLink to="/pricing" className=" hover:text-slate-400 cursor-pointer active:text-slate-50">Pricing</NavLink>
-     <NavLink to="/signup" className="hover:text-slate-400 cursor-pointer active:text-slate-50">Signup</NavLink>
+     <NavLink to="/status" className="hover:text-slate-400 cursor-pointer active:text-slate-50">Signup</NavLink>
      <NavLink to="/contact" className="hover:text-slate-400 cursor-pointer active:text-slate-50">Contact-Us</NavLink>
    </div>
-   <Link to="/signup">
+   <Link to="/status">
    <button className="border-2 text-yellow-400  font-poppins border-yellow-400 rounded-full p-1 px-3 hover:text-yellow-200 active:text-slate-50">Lets start your learning journey</button>
    </Link>
    </div>
@@ -67,7 +67,7 @@ export default function Header() {
               <span>Features</span>
             </button>
 
-            <Link to="/signup">
+            <Link to="/status">
             <button className="w-full h-11 flex items-center px-5 gap-4 text-gray-700 hover:bg-gray-100 rounded-md">
               <LogIn size={18} />
               <span>Signup</span>

@@ -6,8 +6,10 @@ import {
   LogOut,
 } from "lucide-react";
 import { useState } from "react";
+import { useAuth } from "../Context/authcontext";
 export default function Profile() {
- const[open, setOpen] =useState(false)
+const {currentUser} = useAuth()
+ const[open, setOpen] =useState(false);
  let profile;
  if(open){
  profile = <div className="absolute mt-8 bg-white right-5 p-4 rounded-md font-semibold grid gap-4 justify-start w-[30%]">
@@ -36,7 +38,7 @@ export default function Profile() {
     <div>
        <div className="flex items-center gap-4">
             <div className="text-right">
-              <h3 className="font-semibold text-[16px]">Amarachi</h3>
+              <h3 className="font-semibold text-[16px]">{currentUser.email}</h3>
               <p className="text-gray-500 text-sm">Learner</p>
             </div>
             <button onClick={() => setOpen(!open)}>

@@ -16,7 +16,6 @@ import { useAuth } from "../Context/authcontext.jsx";
   const [passwordConfirm, setPasswordConfirm] = useState("")
   const [error, setError] = useState("");
   const [loading, setLoading] = useState("");
-  const [msg, setMsg] = useState("");
 
   const {signup} = useAuth();
   const navigate = useNavigate()

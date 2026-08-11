@@ -56,7 +56,7 @@ export default function Home() {
     <div className="justify-self-center pl-6">
       <h1 className=" scale-y-90 text-5xl font-bold font-lato mt-8 ">Collaborate & learn with <br></br> our platform</h1>
       <p className=" scale-y-100  font-lato mt-6 text-2xl text-[#524f4f]" >We offer a wide range of language courses taugth by <br></br> experienced and qualified instructors, who are <br></br> passionate about teaching and dedicated to helping <br></br> you achieve your language goals.</p>
-      <Link to="/signup">
+      <Link to="/status">
       <button className="bg-yellow-400 mt-10 p-3 px-12 rounded-2xl font-semi-bold font-poppins text-lg hover:bg-yellow-600 active:bg-yellow-200">Get started</button>
       </Link>
     </div>
@@ -66,7 +66,7 @@ export default function Home() {
     <div className="justify-self-center pl-8">
       <h1 className=" scale-y-90 text-5xl font-bold font-lato mt-8 ">Propel your career &<br></br>expand your knowledge <br></br> at any level</h1>
       <p className=" scale-y-100  font-lato mt-6 text-2xl text-[#524f4f]" >Learnflow is an online course class that provides <br></br> various categories of programming courses.</p>
-      <Link to="/signup">
+      <Link to="/status">
       <button className="bg-yellow-400 mt-10 mb-8 p-3 px-12 rounded-2xl font-semi-bold font-poppins text-lg hover:bg-yellow-600 active:bg-yellow-200">Get started</button>
       </Link>
     </div>

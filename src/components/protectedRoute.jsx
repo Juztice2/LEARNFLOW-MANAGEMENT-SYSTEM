@@ -6,7 +6,7 @@ function ProtectedRoute({children}) {
   const {currentUser} = useAuth();
 
   if(!currentUser) {
-    return <Navigate to="/signup" replace />
+    return <Navigate to="/home" replace />
   }
   return children;
 }

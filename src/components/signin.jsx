@@ -22,11 +22,14 @@ import {
   e.preventDefault();
   setLoading(true);
   setMsg('');
+  if(!email || !password){
+   return setMsg("Please provide your details")
+  }
   try{
     await signInWithEmailAndPassword(auth, email, password);
     setMsg('Login successful! You are now signed login')
   }catch (err){
-setMsg('err.message');
+    setMsg(err.message)
   }finally {
     setLoading(false)
   }
@@ -40,7 +43,13 @@ setMsg('err.message');
    </div>
    <h1 className="text-2xl mt-5 font-semibold">Sign in</h1>
    <p className="font-extralight mb-6">Welcome back!. PLease enter ur details.</p>
-   
+    {
+      msg && (
+        <div className="bg-red-600 text-white">
+          {msg}
+        </div>
+      )
+      }
      <label for="email">Email</label>
     <div className="mt-3 gap-2 font-poppins  border border-neutral-800 flex items-center rounded-md p-3 justify-between mb-8">
    <input placeholder="Enter your email" id="email" type="email" value={email} onChange={(e)=> setEmail(e.target.value)}
