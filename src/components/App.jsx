@@ -11,6 +11,8 @@ import Setting from "./settings";
 import ProtectedRoute from "./protectedRoute";
 import { useAuth } from "../Context/authcontext";
 import Status from "./status";
+import SubjectsBuilder from "./buildcourse";
+import CreateCourse from "./addCourses";
 
 function App() {
 const {loading, currentUser} = useAuth();
@@ -33,6 +35,8 @@ if(loading){
            <Route path="/profile" element={<ProfileData/>} />
            <Route path="/explore" element={<Explore/>} />
            <Route path="/settings" element={<Setting/>} />
+            <Route path="/buildcourse" element ={<SubjectsBuilder/>} />
+             <Route path="/addCourses" element ={<CreateCourse/>} />
              <Route path="/dashboard" element={
                <ProtectedRoute>
                 <Dashboard />

@@ -65,10 +65,12 @@ const handleLogout = async () => {
             </button>
             </Link>
 
+           <Link to="/buildcourse">
             <button className="w-full h-11 flex items-center px-5 gap-4 text-gray-700 hover:bg-gray-100 rounded-md">
               <FileEdit size={18} />
               <span>Course Builder</span>
             </button>
+            </Link>
            <Link to="/settings">
             <button className="w-full h-11 flex items-center px-5 gap-4 text-gray-700 hover:bg-gray-100 rounded-md">
               <Settings size={18} />
@@ -121,12 +123,12 @@ const handleLogout = async () => {
               <span>All courses</span>
             </button>
             </Link>
-
+           <Link to="/buildcourse">
             <button className="w-full h-11 flex items-center px-5 gap-4 text-gray-700 hover:bg-gray-100 rounded-md">
               <FileEdit size={18} />
               <span>Course Builder</span>
             </button>
-            
+            </Link>
              <Link to="/explore">
             <button className="w-full h-11 flex items-center px-5 gap-4 text-gray-700 hover:bg-gray-100 rounded-md">
               <GlobeIcon size={18} />
