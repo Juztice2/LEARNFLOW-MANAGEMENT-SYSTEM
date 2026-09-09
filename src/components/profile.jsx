@@ -5,7 +5,9 @@ import {
 } from "lucide-react";
 import Dashboard1 from "./dashboard1"
 import Profile from "./profileAvata";
+import { useAuth } from "../Context/authcontext";
 export default function ProfileData() {
+  const {currentUser} = useAuth()
   return(
   <div className=" font-poppins">
       <div className="flex bg-[#F5F5F5]  justify-between p-2 sticky top-0 z-50">
@@ -29,15 +31,15 @@ export default function ProfileData() {
       <div className="lg:grid grid-cols-2 gap-5">
       <div className="mt-10">
         <p>First Name</p>
-        <p className="border-2 border-black p-2 rounded-md mt-2 bg-[#F5F5F5]">Ogechi</p>
+        <p className="border-2 border-black p-2 rounded-md mt-2 bg-[#F5F5F5]">{currentUser.email}</p>
       </div>
       <div className="mt-10">
         <p>Last Name</p>
-        <p className="border-2 border-black p-2 rounded-md mt-2 bg-[#F5F5F5]">William</p>
+        <p className="border-2 border-black p-2 rounded-md mt-2 bg-[#F5F5F5]">{currentUser.email}</p>
       </div>
       <div className="mt-10">
         <p>Email</p>
-        <p className="border-2 border-black p-2 rounded-md mt-2 bg-[#F5F5F5]">Ogechi@gmail.com</p>
+        <p className="border-2 border-black p-2 rounded-md mt-2 bg-[#F5F5F5]">{currentUser.email}</p>
       </div>
       <div className="mt-10">
         <p>Phone Number (Optional)</p>

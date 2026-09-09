@@ -1,8 +1,10 @@
 import { Pencil } from "lucide-react";
 import Dashboard1 from "./dashboard1";
 import Profile from "./profileAvata";
+import { useAuth } from "../Context/authcontext";
 
 export default function Setting() {
+  const {currentUser} = useAuth()
   return (
     <div className=" font-poppins">
           <div className="flex bg-[#F5F5F5]  justify-between p-2 sticky top-0 z-50">
@@ -29,7 +31,7 @@ export default function Setting() {
            
             {/* Name */}
         <div className="pt-1 text-center justify-self-center">
-          <h2 className="font-semibold">Nneka Eze</h2>
+          <h2 className="font-semibold">{currentUser.email}</h2>
           <p className="text-gray-500 text-sm">Student</p>
         </div>
         </div>
@@ -81,7 +83,7 @@ export default function Setting() {
 
                   <input
                     type="text"
-                    defaultValue="Nneka"
+                    defaultValue={currentUser.email}
                     className="mt-1 w-full border rounded-md px-3 py-2 outline-none focus:ring-2 focus:ring-black"
                   />
                 </div>
@@ -93,7 +95,7 @@ export default function Setting() {
 
                   <input
                     type="text"
-                    defaultValue="Eze"
+                    defaultValue={currentUser.email}
                     className="mt-1 w-full border rounded-md px-3 py-2 outline-none focus:ring-2 focus:ring-black"
                   />
                 </div>

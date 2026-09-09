@@ -8,7 +8,7 @@ import {
 import { useState } from "react";
 import { useAuth } from "../Context/authcontext";
 export default function Profile() {
-const {currentUser} = useAuth()
+ const {currentUser} = useAuth()
  const[open, setOpen] =useState(false);
  let profile;
  if(open){

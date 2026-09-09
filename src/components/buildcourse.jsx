@@ -8,10 +8,9 @@ import Profile from "./profileAvata";
 import { db } from "../firebase";
 import { getDocs, collection } from "firebase/firestore";
 
-
+export  const coursesCollection = collection(db ,"Courses")
 export default function SubjectsBuilder() {
   const [courses, setCourses] = useState([]);
-  const coursesCollection = collection(db ,"Courses")
   useEffect(() =>{
     const getCourses = async () => {
     try {
@@ -29,7 +28,7 @@ export default function SubjectsBuilder() {
   },[])
   
   return (
-    <div className=" bg-[#F5F5F5] font-poppins h-screen">
+    <div className=" bg-[#F5F5F5] font-poppins h-auto">
       <div className="flex bg-white justify-between p-2  sticky top-0 z-50">
         <Dashboard1 />
         <Profile />
@@ -51,17 +50,17 @@ export default function SubjectsBuilder() {
            </div>
            </Link>
           </div>
-          <div className="justify-self-center mt-4">
+          <div className="justify-self-center mt-4 bg-white  h-56 w-64 rounded-md ">
          {courses.map((course) => (
           <div>
-          <h1> Language: {course.Language}</h1>
-          <h1>Title: {course.Title}</h1>
-          <h1>Tutor: {course.Tutor}</h1>
+          <h1> Language: {course.language}</h1>
+          <h1>Title: {course.title}</h1>
+          <h1>Tutor: {course.tutor}</h1>
+          <h1>Subject: {course.subject}</h1>
           </div>
          ))}
           </div>
-              
-    </div>
+  </div>
   )
 }
 

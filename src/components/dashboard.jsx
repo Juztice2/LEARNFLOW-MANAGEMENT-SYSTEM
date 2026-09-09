@@ -132,7 +132,7 @@ export default function Dashboard() {
                     </p>
                     <hr></hr>
                     <button className="mt-5 bg-black text-white px-5 py-2 rounded-lg">
-                      Enroll
+                      Learn
                     </button>
                   </div>
                 </div>
@@ -156,7 +156,7 @@ export default function Dashboard() {
                     </p>
                     <hr></hr>
                     <button className="mt-5 bg-black text-white px-5 py-2 rounded-lg">
-                      Enroll
+                      Learn
                     </button>
                   </div>
                 </div>
@@ -180,7 +180,7 @@ export default function Dashboard() {
                     </p>
                     <hr></hr>
                     <button className="mt-5 bg-black text-white px-5 py-2 rounded-lg">
-                      Enroll
+                      Learn
                     </button>
                   </div>
                 </div>
@@ -204,7 +204,7 @@ export default function Dashboard() {
                     </p>
                     <hr></hr>
                     <button className="mt-5 bg-black text-white px-5 py-2 rounded-lg">
-                      Enroll
+                      Learn
                     </button>
                   </div>
                 </div>
