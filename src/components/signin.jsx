@@ -71,7 +71,6 @@ import {
     <p className=" font-poppins justify-self-center mt-3 mb-4  text-stone-500 text-sm ">Don't have an Account ? <Link to="/signup" className="text-black font-bold hover:cursor-pointer">Signup</Link></p>
   </form>
    <div>
-   <img src={smallteam} className="hidden"/>
    </div>
  </div>
   )
