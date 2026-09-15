@@ -65,10 +65,16 @@ const handleLogout = async () => {
             </button>
             </Link>
 
-           <Link to="/buildcourse">
+           <Link to="/addCourses">
             <button className="w-full h-11 flex items-center px-5 gap-4 text-gray-700 hover:bg-gray-100 rounded-md">
               <FileEdit size={18} />
               <span>Course Builder</span>
+            </button>
+            </Link>
+                <Link to="/adminDashboard">
+            <button className="w-full h-11 flex items-center px-5 gap-4 text-gray-700 hover:bg-gray-100 rounded-md">
+               <LayoutDashboard size={18} />
+              <span>Admin-Panel</span>
             </button>
             </Link>
            <Link to="/settings">
@@ -123,7 +129,7 @@ const handleLogout = async () => {
               <span>All courses</span>
             </button>
             </Link>
-           <Link to="/buildcourse">
+           <Link to="/addCourses">
             <button className="w-full h-11 flex items-center px-5 gap-4 text-gray-700 hover:bg-gray-100 rounded-md">
               <FileEdit size={18} />
               <span>Course Builder</span>
@@ -135,6 +141,14 @@ const handleLogout = async () => {
               <span>Explore</span>
             </button>
             </Link>
+
+            <Link to="/AdminDashboard">
+            <button className="w-full h-11 flex items-center px-5 gap-4 text-gray-700 hover:bg-gray-100 rounded-md">
+               <LayoutDashboard size={18} />
+              <span>Admin-Panel</span>
+            </button>
+            </Link>
+
             <Link to="/settings">
             <button className="w-full h-11 flex items-center px-5 gap-4 text-gray-700 hover:bg-gray-100 rounded-md">
               <Settings size={18} />

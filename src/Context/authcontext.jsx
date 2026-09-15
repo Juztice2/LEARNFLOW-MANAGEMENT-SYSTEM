@@ -15,7 +15,7 @@ export  function useAuth(){
 
 export function AuthProvider({children}) {
 const [currentUser, setCurrentuser] = useState(null);
-const [loading, setLoading] = useState(null);
+const [loading, setLoading] = useState(true);
 const [error, setError] = useState('');
 
 async function signup(email, password) {
@@ -23,7 +23,7 @@ async function signup(email, password) {
   try {
     return await createUserWithEmailAndPassword(auth, email, password)
   }catch (err){
-    setError(err.massage);
+    setError(err.message);
     throw err;
   }
 }

@@ -2,16 +2,17 @@ import {
   PlusCircle
 } from "lucide-react";
 import { useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import Dashboard1 from "./dashboard1";
 import Profile from "./profileAvata";
 import { addDoc} from "firebase/firestore"
-import { coursesCollection } from "./buildcourse";
+import { coursesCollection } from "./AdminDashboard";
 import { storage } from "../firebase";
 import { ref,uploadBytes } from "firebase/storage";
 
 
 export default function CreateCourse() {
+  const navigate = useNavigate()
   const [files, setFiles] = useState("");
   const [title, setTitle] = useState("");
   const [tutor, setTutor] = useState("")
