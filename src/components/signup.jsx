@@ -89,6 +89,7 @@ import { useAuth } from "../Context/authcontext.jsx";
     <p className=" font-poppins justify-self-center mt-3 mb-4  text-stone-500 text-sm ">Already have an Account ? <Link to="/signin" className="text-black font-bold hover:cursor-pointer">Login</Link></p>
   </form>
    <div>
+       <img src={smallteam} className="hidden lg:block justify-self-center mt-32 w-[70%]"/>
    </div>
  </div>
   )
