@@ -9,8 +9,8 @@ import { db } from "../firebase";
 import { getDocs, collection } from "firebase/firestore";
 import { useAuth } from "../Context/authcontext.jsx";
 
-export  const adminDashboard = collection(db ,"Courses")
-export default function SubjectsBuilder() {
+export  const coursesCollection = collection(db ,"Courses")
+export default function adminDashboard() {
   const [courses, setCourses] = useState([]);
   useEffect(() =>{
     const getCourses = async () => {
