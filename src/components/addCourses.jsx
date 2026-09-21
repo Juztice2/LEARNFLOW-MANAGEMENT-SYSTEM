@@ -6,7 +6,7 @@ import { useNavigate} from "react-router-dom";
 import Dashboard1 from "./dashboard1";
 import Profile from "./profileAvata";
 import { addDoc} from "firebase/firestore"
-import { coursesCollection } from "./AdminDashboard";
+import { adminDashboard } from "./AdminDashboard";
 import { storage } from "../firebase";
 import { ref,uploadBytes } from "firebase/storage";
 
@@ -21,7 +21,7 @@ export default function CreateCourse() {
     if(files == null)return null;
     const fileRef = ref(storage, `${files.name}`);
     try {
-        await addDoc(coursesCollection,{
+        await addDoc(adminDashboard,{
     title:title,
     tutor:tutor
    }) 
