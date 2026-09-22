@@ -11,7 +11,7 @@ import { storage } from "../firebase";
 import { ref,uploadBytes } from "firebase/storage";
 
 
-export default function AddCourses() {
+export default function Createcourse() {
   const navigate = useNavigate()
   const [files, setFiles] = useState("");
   const [title, setTitle] = useState("");

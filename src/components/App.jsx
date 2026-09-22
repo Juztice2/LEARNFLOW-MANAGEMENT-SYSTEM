@@ -12,7 +12,9 @@ import ProtectedRoute from "./protectedRoute";
 import { useAuth } from "../Context/authcontext";
 import Status from "./Status";
 import AdminDashboard from "./AdminDashboard";
-import AddCourses from "./addCourses";
+import Createcourse from "./Createcourse";
+
+
 
 function App() {
 const {loading, currentUser} = useAuth();
@@ -34,11 +36,10 @@ if(loading){
            <Route path="/Courses" element={<Courses/>} />
            <Route path="/Profile" element={<ProfileData/>} />
            <Route path="/Explore" element={<Explore/>} />
-          <Route path="/AddCourses" element={<AddCourses/>} />
            <Route path="/Settings" element={<Setting/>} />
           <Route path="/AdminDashboard" element={<AdminDashboard/>} />
-             <Route path="/AddCourses" element ={<AddCourses/>} />
-             <Route path="/Dashboard" element={
+          <Route path="/Createcourse" element={<Createcourse />} />
+           <Route path="/Dashboard" element={
                <ProtectedRoute>
                 <Dashboard />
              </ProtectedRoute>} />
