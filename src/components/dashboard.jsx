@@ -3,9 +3,9 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import Dashboard1 from "./dashboard1";
-import Profile from "./profileAvata";
-import data from "./data";
+import Dashboard1 from "./Dashboard1";
+import Profile from "./ProfileAvata";
+import data from "./Data";
 import css from "../assets/assets_learn_flow/CSS.png"
 import robot from "../assets/assets_learn_flow/robot.png"
 import JavaScript from "../assets/assets_learn_flow/javascript.png"

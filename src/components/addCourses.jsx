@@ -3,15 +3,15 @@ import {
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useNavigate} from "react-router-dom";
-import Dashboard1 from "./dashboard1";
-import Profile from "./profileAvata";
+import Dashboard1 from "./Dashboard1";
+import Profile from "./ProfileAvata";
 import { addDoc} from "firebase/firestore"
 import { coursesCollection } from "./AdminDashboard";
 import { storage } from "../firebase";
 import { ref,uploadBytes } from "firebase/storage";
 
 
-export default function CreateCourse() {
+export default function AddCourses() {
   const navigate = useNavigate()
   const [files, setFiles] = useState("");
   const [title, setTitle] = useState("");

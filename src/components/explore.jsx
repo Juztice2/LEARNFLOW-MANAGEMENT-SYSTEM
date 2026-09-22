@@ -4,10 +4,10 @@ import {
   TimerIcon,
   HeartIcon
 } from "lucide-react";
-import SearchFilter from "./searchFilter";
-import Dashboard1 from "./dashboard1";
-import Profile from "./profileAvata";
-import courses from "./data";
+import SearchFilter from "./SearchFilter";
+import Dashboard1 from "./Dashboard1";
+import Profile from "./ProfileAvata";
+import courses from "./Data";
 
 
 

@@ -3,9 +3,9 @@ import {
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import Dashboard1 from "./dashboard1";
-import Profile from "./profileAvata";
-import { db } from "../firebase";
+import Dashboard1 from "./Dashboard1.jsx";
+import Profile from "./ProfileAvata.jsx";
+import { db } from "../firebase.js";
 import { getDocs, collection } from "firebase/firestore";
 import { useAuth } from "../Context/authcontext.jsx";
 

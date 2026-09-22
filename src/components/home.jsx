@@ -10,8 +10,8 @@ import collab2 from "../assets/assets_learn_flow/collab2.png";
 import commments from "../assets/assets_learn_flow/commments.png"
 import yellow from "../assets/assets_learn_flow/yellowimage.png"
 import { Link, useNavigate } from "react-router-dom"
-import Header from "./header";
-import Dashboard from "./dashboard";
+import Header from "./Header";
+import Dashboard from "./Dashboard";
 
 const teampic = teamimage;
 const homepage = homepage2;

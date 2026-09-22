@@ -1,9 +1,9 @@
 import { Pencil } from "lucide-react";
-import Dashboard1 from "./dashboard1";
-import Profile from "./profileAvata";
+import Dashboard1 from "./Dashboard1";
+import Profile from "./ProfileAvata";
 import { useAuth } from "../Context/authcontext";
 
-export default function Setting() {
+export default function Settings() {
   const {currentUser} = useAuth()
   return (
     <div className=" font-poppins">

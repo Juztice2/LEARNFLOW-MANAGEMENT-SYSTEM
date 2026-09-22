@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { useAuth } from "../Context/authcontext";
-export default function Profile() {
+export default function ProfileAvata() {
  const {currentUser} = useAuth()
  const[open, setOpen] =useState(false);
  let profile;

@@ -3,16 +3,16 @@ import {
   BellIcon,
   PersonStanding
 } from "lucide-react";
-import Dashboard1 from "./dashboard1"
-import Profile from "./profileAvata";
+import Dashboard1 from "./Dashboard1"
+import ProfileAvata from "./ProfileAvata";
 import { useAuth } from "../Context/authcontext";
-export default function ProfileData() {
+export default function Profile() {
   const {currentUser} = useAuth()
   return(
   <div className=" font-poppins">
       <div className="flex bg-[#F5F5F5]  justify-between p-2 sticky top-0 z-50">
         <Dashboard1 />
-        <Profile />
+        <ProfileAvata />
       </div>
           <section className="w-[100%] px-12 py-12 top-0 lg:w-[80%] justify-self-end">
           <h1 className="text-2xl font-bold mb-6">Personal Informations</h1>

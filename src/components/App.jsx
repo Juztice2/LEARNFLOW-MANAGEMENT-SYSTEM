@@ -1,18 +1,18 @@
 import React from "react"
 import { BrowserRouter, Routes, Route, Link, Navigate } from "react-router-dom";
-import Home from "./home"
-import Signup from "./signup";
+import Home from "./Home"
+import Dashboard from "./Dashboard";
+import Courses from "./Courses";
+import ProfileData from "./Profile";
 import Signin from "./signin";
-import Dashboard from "./dashboard";
-import Courses from "./courses";
-import ProfileData from "./profile";
-import Explore from "./explore";
-import Setting from "./settings";
+import Signup from "./signup";
+import Explore from "./Explore";
+import Setting from "./Settings";
 import ProtectedRoute from "./protectedRoute";
 import { useAuth } from "../Context/authcontext";
-import Status from "./status";
-import CreateCourse from "./addCourses";
-import SubjectsBuilder from "./AdminDashboard";
+import Status from "./Status";
+import AdminDashboard from "./AdminDashboard";
+import AddCourses from "./addCourses";
 
 function App() {
 const {loading, currentUser} = useAuth();
@@ -26,18 +26,19 @@ if(loading){
   return (
     <div>
       <Routes>
-        <Route path="/" element={currentUser ? <Navigate to="/dashboard" replace /> : <Home/>} />
-        <Route path="/home" element={currentUser ? <Navigate to="/dashboard" replace /> : <Home/>} />
-        <Route path="/signup" element= {currentUser ? <Navigate to="/dashboard" replace /> : < Signup />} />
-         <Route path="/signin" element={currentUser ? <Navigate  to="/dashboard" replace /> : <Signin/>} />
-          <Route path="/status" element={currentUser ? <Navigate  to="/dashboard" replace /> : <Status/>} />
-           <Route path="/courses" element={<Courses/>} />
-           <Route path="/profile" element={<ProfileData/>} />
-           <Route path="/explore" element={<Explore/>} />
-           <Route path="/settings" element={<Setting/>} />
-            <Route path="/adminDashboard" element={<SubjectsBuilder/>} />
-             <Route path="/addCourses" element ={<CreateCourse/>} />
-             <Route path="/dashboard" element={
+        <Route path="/" element={currentUser ? <Navigate to="/Dashboard" replace /> : <Home/>} />
+        <Route path="/Home" element={currentUser ? <Navigate to="/Dashboard" replace /> : <Home/>} />
+        <Route path="/signup" element={currentUser ? <Navigate to="/Dashboard" replace /> : <Signup/>} />
+         <Route path="/signin" element={currentUser ? <Navigate  to="/Dashboard" replace /> : <Signin/>} />
+          <Route path="/Status" element={currentUser ? <Navigate  to="/Dashboard" replace /> : <Status/>} />
+           <Route path="/Courses" element={<Courses/>} />
+           <Route path="/Profile" element={<ProfileData/>} />
+           <Route path="/Explore" element={<Explore/>} />
+          <Route path="/AddCourses" element={<AddCourses/>} />
+           <Route path="/Settings" element={<Setting/>} />
+          <Route path="/AdminDashboard" element={<AdminDashboard/>} />
+             <Route path="/AddCourses" element ={<AddCourses/>} />
+             <Route path="/Dashboard" element={
                <ProtectedRoute>
                 <Dashboard />
              </ProtectedRoute>} />
