@@ -4,7 +4,6 @@ import Home from "./Home"
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
 import ProfileData from "./Profile";
-import Signup from "./signup";
 import Explore from "./Explore";
 import Setting from "./Settings";
 import ProtectedRoute from "./protectedRoute";

@@ -31,13 +31,13 @@ import {
   <div className="grid gap-2">
   
    <button className="p-3 px-7 rounded-md  text-purple-800 bg-[#F5F5F5] hover:bg-slate-300 active:bg-white">
-    <Link to="/signup">
+    <Link to="/Upsign">
     Student
     </Link>
    </button>
 
     <button className="p-3 px-7 rounded-md text-red-800 bg-[#F5F5F5] hover:bg-slate-300 active:bg-white">
-      <Link to="/signup">
+      <Link to="/Upsign">
     Tutor
     </Link>
    </button>
