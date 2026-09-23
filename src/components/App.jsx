@@ -4,7 +4,6 @@ import Home from "./Home"
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
 import ProfileData from "./Profile";
-import Signin from "./signin";
 import Signup from "./signup";
 import Explore from "./Explore";
 import Setting from "./Settings";
@@ -13,6 +12,8 @@ import { useAuth } from "../Context/authcontext";
 import Status from "./Status";
 import AdminDashboard from "./AdminDashboard";
 import Createcourse from "./Createcourse";
+import Insign from "./Insign";
+import Upsign from "./Upsign";
 
 
 
@@ -30,8 +31,9 @@ if(loading){
       <Routes>
         <Route path="/" element={currentUser ? <Navigate to="/Dashboard" replace /> : <Home/>} />
         <Route path="/Home" element={currentUser ? <Navigate to="/Dashboard" replace /> : <Home/>} />
-        <Route path="/signup" element={currentUser ? <Navigate to="/Dashboard" replace /> : <Signup/>} />
-         <Route path="/signin" element={currentUser ? <Navigate  to="/Dashboard" replace /> : <Signin/>} />
+        <Route path="/Upsign" element={currentUser ? <Navigate to="/Dashboard" replace /> : <Upsign/>} />
+         <Route path="/Insign" element={currentUser ? <Navigate to="/Dashboard" replace /> : <Insign />} />
+        
           <Route path="/Status" element={currentUser ? <Navigate  to="/Dashboard" replace /> : <Status/>} />
            <Route path="/Courses" element={<Courses/>} />
            <Route path="/Profile" element={<ProfileData/>} />
