@@ -86,10 +86,10 @@ import { useAuth } from "../Context/authcontext.jsx";
    <button disabled={loading} type="submit" className="bg-purple-800 text-white p-4 w-full mt-6 rounded-lg  font-poppins hover:bg-slate-400 active:bg-white">
     {loading ? "..." : 'Create your free Account'} 
     </button>
-    <p className=" font-poppins justify-self-center mt-3 mb-4  text-stone-500 text-sm ">Already have an Account ? <Link to="/Insign" className="text-black font-bold hover:cursor-pointer">Login</Link></p>
+    <p className=" font-poppins justify-self-center mt-3 mb-4  text-stone-500 text-sm ">Already have an Account ? <Link to="/signin" className="text-black font-bold hover:cursor-pointer">Login</Link></p>
   </form>
    <div>
-       <img src={smallteam} className="hidden lg:block justify-self-center mt-32 pl-1 w-[30%]"/>
+       <img src={smallteam} className="hidden lg:block justify-self-center mt-32 pl-1 w-[32%]"/>
    </div>
  </div>
   )
