@@ -78,9 +78,3 @@ import {
 }
 export default Insign
 
-
-
-
-  
-   </div> 
-  */}
