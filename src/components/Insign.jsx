@@ -72,7 +72,7 @@ import {
   </form>
    <div>
     
-     <img src={smallteam} className="hidden lg:block justify-self-center mt-32 w-[30%]"/>
+     <img src={smallteam} className="hidden lg:block justify-self-center mt-32 w-[60%]"/>
    </div>
  </div>
   )
