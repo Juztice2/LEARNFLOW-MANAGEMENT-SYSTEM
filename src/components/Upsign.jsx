@@ -46,7 +46,7 @@ import { useAuth } from "../Context/authcontext.jsx";
  }
   return(
  <div className="overflow-hidden bg-[#F5F5F5] font-poppins lg:flex">
-  <form onSubmit={handleSubmit} className="bg-white w-[90%] justify-self-center mt-10 px-10 py-4 rounded-md justify-items-start mb-5 lg:w-[60]">
+  <form onSubmit={handleSubmit} className="bg-white w-[90%] justify-self-center mt-10 px-10 py-4 rounded-md justify-items-start mb-5 lg:w-[60%]">
      <div className="flex items-center gap-1">
     <BookOpen size={30} />
    <Link to="/" className="font-poppins text-purple-800  hover:text-slate-400 cursor-pointer active:text-slate-50">LearnFlow</Link>
@@ -86,7 +86,7 @@ import { useAuth } from "../Context/authcontext.jsx";
    <button disabled={loading} type="submit" className="bg-purple-800 text-white p-4 w-full mt-6 rounded-lg  font-poppins hover:bg-slate-400 active:bg-white">
     {loading ? "..." : 'Create your free Account'} 
     </button>
-    <p className=" font-poppins justify-self-center mt-3 mb-4  text-stone-500 text-sm ">Already have an Account ? <Link to="/signin" className="text-black font-bold hover:cursor-pointer">Login</Link></p>
+    <p className=" font-poppins justify-self-center mt-3 mb-4  text-stone-500 text-sm ">Already have an Account ? <Link to="/Insign" className="text-black font-bold hover:cursor-pointer">Login</Link></p>
   </form>
  
  </div>
