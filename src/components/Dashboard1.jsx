@@ -35,7 +35,7 @@ const handleLogout = async () => {
       {/* Sidebar */}
     <aside className="hidden lg:block w-[230px] bg-white border-r border-gray-200 top-0 h-screen fixed left-0 pt-10">
       {/* Logo */}
-      <Link to="/dashboard">
+      <Link to="/Dashboard">
        <div className="px-8 py-10 flex items-center gap-3">
           <BookOpen className=" w-8 h-8" />
           <h1 className="text-[18px] font-bold">LearnFlow</h1>
@@ -45,39 +45,39 @@ const handleLogout = async () => {
           <p className="text-xs text-gray-500 mb-4 uppercase">Menu</p>
 
           <nav className="space-y-2">
-            <Link to="/dashboard">
+            <Link to="/Dashboard">
             <button className="w-full h-11 bg-[#2C2C2C] text-white rounded-md flex items-center px-5 gap-4 ">
               <LayoutDashboard size={18} />
               <span>Dashboard</span>
             </button>
             </Link>
-            <Link to="/courses">
+            <Link to="/Courses">
             <button className="w-full h-11 flex items-center px-5 gap-4 text-gray-700 hover:bg-gray-100 rounded-md">
               <BookOpen size={18} />
               <span>All courses</span>
             </button>
             </Link>
 
-             <Link to="/explore">
+             <Link to="/Explore">
             <button className="w-full h-11 flex items-center px-5 gap-4 text-gray-700 hover:bg-gray-100 rounded-md">
               <GlobeIcon size={18} />
               <span>Explore</span>
             </button>
             </Link>
 
-           <Link to="/addCourses">
+           <Link to="/Createcourse">
             <button className="w-full h-11 flex items-center px-5 gap-4 text-gray-700 hover:bg-gray-100 rounded-md">
               <FileEdit size={18} />
               <span>Course Builder</span>
             </button>
             </Link>
-                <Link to="/adminDashboard">
+                <Link to="/AdminDashboard">
             <button className="w-full h-11 flex items-center px-5 gap-4 text-gray-700 hover:bg-gray-100 rounded-md">
                <LayoutDashboard size={18} />
               <span>Admin-Panel</span>
             </button>
             </Link>
-           <Link to="/settings">
+           <Link to="/Settings">
             <button className="w-full h-11 flex items-center px-5 gap-4 text-gray-700 hover:bg-gray-100 rounded-md">
               <Settings size={18} />
               <span>Settings</span>
@@ -106,7 +106,7 @@ const handleLogout = async () => {
               {open  && (
                <aside className=" w-[230px] bg-white border-r border-gray-200 fixed left-0 bottom-0 h-screen pt-8">
         {/* Logo */}
-        <Link to="/dashboard">
+        <Link to="/Dashboard">
         <div className="px-8 py-10 flex items-center gap-3">
           <BookOpen className="w-8 h-8" />
           <h1 className="text-[18px] font-bold">LearnFlow</h1>
@@ -117,25 +117,25 @@ const handleLogout = async () => {
           <p className="text-xs text-gray-500 mb-4 uppercase">Menu</p>
 
           <nav className="space-y-2">
-            <Link to="/dashboard">
+            <Link to="/Dashboard">
             <button className="w-full h-11 bg-[#2C2C2C] text-white rounded-md flex items-center px-5 gap-4 ">
               <LayoutDashboard size={18} />
               <span>Dashboard</span>
             </button>
             </Link>
-           <Link to="/courses">
+           <Link to="/Courses">
             <button className="w-full h-11 flex items-center px-5 gap-4 text-gray-700 mt-1 hover:bg-gray-100 rounded-md">
               <BookOpen size={18} />
               <span>All courses</span>
             </button>
             </Link>
-           <Link to="/addCourses">
+           <Link to="/Createcourse">
             <button className="w-full h-11 flex items-center px-5 gap-4 text-gray-700 hover:bg-gray-100 rounded-md">
               <FileEdit size={18} />
               <span>Course Builder</span>
             </button>
             </Link>
-             <Link to="/explore">
+             <Link to="/Explore">
             <button className="w-full h-11 flex items-center px-5 gap-4 text-gray-700 hover:bg-gray-100 rounded-md">
               <GlobeIcon size={18} />
               <span>Explore</span>
@@ -149,7 +149,7 @@ const handleLogout = async () => {
             </button>
             </Link>
 
-            <Link to="/settings">
+            <Link to="/Settings">
             <button className="w-full h-11 flex items-center px-5 gap-4 text-gray-700 hover:bg-gray-100 rounded-md">
               <Settings size={18} />
               <span>Settings</span>

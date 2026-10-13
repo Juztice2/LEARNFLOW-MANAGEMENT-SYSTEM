@@ -21,7 +21,8 @@ const {loading, currentUser} = useAuth();
 if(loading){
  return(
   <div>
-    <p>Loading</p>
+     <p className="justify-self-center text-3xl text-green-600 font-poppins mt-32">Loading...</p>
+     
   </div>
  ) 
 }

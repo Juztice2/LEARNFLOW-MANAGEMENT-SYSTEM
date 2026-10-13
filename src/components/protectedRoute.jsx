@@ -6,10 +6,10 @@ function ProtectedRoute({ children }) {
 
   // Firebase is still checking the user
   if (loading) {
-    return 
+    return( 
     
-      <p className="justify-self-center text-lg text-green-700 font-poppins">Loading...</p>
-      
+       <p className="justify-self-center text-lg text-green-700 font-poppins">Load...</p>
+    ) 
   }
 
   // Firebase finished checking and there is no user
